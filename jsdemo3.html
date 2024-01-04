@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> Conditional Operator </title>
+<script language="javascript">
+   function check()
+    {
+     var x ="";
+	 var x = document.OddEven.txtA.value;
+	 var y;
+	  y=(x%2 == 0)?"Even Number":"Odd Number";
+	   
+	 document.OddEven.txtB.value = y;
+	} 
+</script>
+</head>
+<body>
+    <center>
+	<h1> Demo Of Conditional Operator </h1>
+	<form name="OddEven">
+	  Enter number:<input type="number" name="txtA">
+	  <br><input type="button" value="check Odd/Even" onclick="check()">
+	  <br><input type="text" name="txtB" readonly="true">
+	</form>
+    </center>
+</body>
+</html>
