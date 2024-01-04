@@ -1,0 +1,51 @@
+<html>
+<head>
+<title> Define Function </title>
+<script language="javascript">
+function add1()
+{
+   var a = parseInt(document.formadd.txtA.value);
+   var b = parseInt(document.formadd.txtB.value);
+   c=a+b;
+   document.formadd.txtC.value=c;
+}
+</script>
+</head>
+<body>
+   <center>
+   <h1> Demo of addition with User Define Function </h1>
+   <form name="formadd">
+   <table bgcolor="red" border=1>
+    <tr>
+      <th align="right">Enter First Value:</th>
+	  <th><input type="number" name="txtA"></th>
+    </tr>
+	<tr>
+      <th align="right">Enter Second Value:</th>
+	  <th><input type="number" name="txtB"></th>
+    </tr>  
+	<tr>
+	  <td colspan="2" align="center">
+	  <input type="button" name="add" value="Add" onclick="add1()">
+	  </td>
+	<tr>
+	  <th>Ans:</th>
+	  <th><input type"number" name="txtC" readonly="true"></th> 
+	</tr>
+</table>
+</form>
+</html>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
