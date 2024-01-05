@@ -1,0 +1,25 @@
+<html>
+<head>
+   <title> Combinig String </title>
+<script language="javascript">
+function Combine()
+{
+   var x="";
+   var x=document.frm1.txtA.value;
+   var y=document.frm1.txtB.value;
+    c=x+" "+y;
+   document.frm1.txtC.value=c;
+}
+</script>
+<body> 
+   <center>
+   <h1>Demo Of Combinig String </h1>
+   <form name="frm1">
+    name 1:<input type="text" name="txtA"><br><br>
+	name 2:<input type="text" name="txtB">
+	<br><input type="button" value="Combine" onclick="Combine()">
+	<br><input type="text" name="txtC" readonly="true">
+   </form>
+   </center>
+</body>
+</html>
