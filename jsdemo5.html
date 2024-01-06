@@ -1,0 +1,43 @@
+<html>
+<head>
+<title> Switch Statement </title>
+<script language="javascript">
+function check()
+{  
+  var y="";
+  var x=parseFloat(document.findnum.txtA.value);
+    switch(x)
+    {
+	case 1 :
+	   y = "One";
+	       break;
+	case 2 :
+	   y = "Two";
+	       break;
+	case 3 :
+	   y = "Three";
+	       break;
+	case 4 :
+	   y = "Four";
+	       break;
+	case 5 :
+	   y = "Five";
+	       break;
+	default :
+	   y = "wrong number....!"
+    }
+    document.findnum.txtB.value = y;
+}
+</script>
+</head>
+<body>
+    <center>
+	<h1> Demo of switch.. Case </h1>
+	<form name="findnum">
+	  Enter number between 1 to 5:<input type="number" name="txtA">
+	  <br><input type="button" value="find" onclick="check()">
+	  <br>Number is = <input type="text" name="txtB" readonly="true">
+    </form>
+    </center>
+</body>
+</html>
